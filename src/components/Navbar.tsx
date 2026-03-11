@@ -27,6 +27,7 @@ const Navbar = () => {
             { href: "#menu", label: "Menü" },
             { href: "#about", label: "Hakkımızda" },
             { href: "#contact", label: "İletişim" },
+            { href: "yorum", label: "Yorum" },
           ].map((link) => (
             <a
               key={link.href}
