@@ -23,7 +23,11 @@ const HeroSection = () => {
         <p className="text-lg md:text-xl font-body text-primary-foreground/80 mb-8">
           1987'den beri şehrin en lezzetli sosisli sandviçleri
         </p>
-        <a href="#menu">
+        <a href="#menu" onClick={(e) => {
+                  e.preventDefault();
+                  const el = document.querySelector("#menu");
+                  el?.scrollIntoView({ behavior: "smooth" });
+              }}>
           <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-display text-xl px-10 py-6 tracking-wider">
             MENÜYE GÖZ AT
           </Button>
