@@ -1,9 +1,17 @@
-import React from 'react'
+import Navbar from "@/components/Navbar";
+import FeedbackSection from "@/components/FeedbackSection";
+import FooterSection from "@/components/FooterSection";
 
-function Comment() {
+const Comment = () => {
   return (
-    <div>Yorum Sayfası</div>
-  )
-}
+    <div className="min-h-screen bg-background">
+      <Navbar />
+      <div className="pt-16">
+        <FeedbackSection />
+      </div>
+      <FooterSection />
+    </div>
+  );
+};
 
-export default Comment
+export default Comment;
